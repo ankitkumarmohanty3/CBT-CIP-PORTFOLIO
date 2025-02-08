@@ -1,0 +1,204 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsla(275, 100%, 25%, 0.799);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: hsla(275, 100%, 25%, 0.639);
+}
+navbar ul {
+    display: flex;
+    justify-content: center;
+}
+navbar ul li {
+    list-style: none;
+    margin: 25px;
+    cursor: pointer;
+    color: white;
+}
+navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: hsla(275, 38%, 74%, 0.9);
+    font-size: 1.02rem;
+}
+.left-nav {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.right-nav {
+    margin-left: 205px;
+}
+
+/* First Section */
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 90px 0;
+}
+.first-section > div {
+    width: 100%;
+    max-width: 30%;
+}
+.left-section {
+    width: 100%;
+    max-width: 50%;
+}
+.left-section p {
+    font-size: 2.5rem;
+}
+.additional {
+    font-size: 1.8rem;
+}
+.right-section img {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Second Section */
+.second-section {
+    max-width: 90vw;
+    margin-left:110px ;
+}
+
+/* Contact Button */
+.contact button {
+    width: 200px;
+    font-size: 1.2rem;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: hsla(275, 100%, 25%, 0.799);
+    color: white;
+}
+.contact button:hover {
+    background-color: hsla(275, 100%, 25%, 0.575);
+}
+.contact button i {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    margin: 50px auto;
+    padding-top: 20px;
+}
+.about span {
+    font-size: 1.5rem;
+    margin: 40px 0 0 20px;
+    font-weight: bold;
+}
+.text-front, .text-hobbies, .skills {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 40em;
+    border-radius: 5px;
+    background-color: rgba(146, 18, 206, 0.856);
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.text-front:hover, .text-hobbies:hover, .skills:hover {
+    transform: scale(1.05);
+}
+.text-front h2, .text-hobbies h2, .skills h2 {
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience {
+    margin-top: 80px;
+    text-align: center;
+}
+.experience span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.experience .img {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 30rem;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(146, 18, 206, 0.856);
+}
+
+/* Footer */
+footer {
+    height: auto;
+    padding: 20px;
+    background-color: hsla(275, 100%, 25%, 0.639);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer .infor {
+    text-align: center;
+    margin: 40px;
+}
+.infor span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.infor p {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.tool {
+    margin: 20px auto;
+    text-align: center;
+}
+.tool .mail, .tool .linkedin, .tool .github {
+    font-size: 1.2rem;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 760px) {
+    navbar {
+        height: auto;
+        width: auto;
+      padding: 20px 10px;
+        
+    }
+    navbar ul {
+        flex-direction: column;
+        margin: 0;
+    }
+    navbar ul li {
+        margin: 10px 0 0;
+    }
+    .left-section p {
+        font-size: 2rem;
+    }
+    .second-section{
+        margin: 20px;
+    }
+    .contact button {
+        width: 150px;
+        height: 50px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer .tool {
+        margin-top: 10px;
+    }
+}
