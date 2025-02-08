@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -170,7 +170,7 @@ footer .infor {
     text-decoration: none;
 }
 
-/* Responsive Styles */
+/* Responsive  */
 @media (max-width: 760px) {
     navbar {
         height: auto;
